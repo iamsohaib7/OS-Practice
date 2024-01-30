@@ -33,7 +33,8 @@ int main(int argc, char *argv[])
     ThreadArgs args[threadCount];
     long long blockSize = number / threadCount;
     long long remaining = number % threadCount;
-
+    printf("Remaining: %lld\n", remaining);
+    printf("Block Size: %lld\n", blockSize);
     long long start = 1;
     for (int i = 0; i < threadCount; i++)
     {
